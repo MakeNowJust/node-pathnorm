@@ -9,9 +9,10 @@ test('normalize to unix like path in default', function (t) {
   t.end();
 });
 
-test('pathnorm.normalize(p, pathnorm.sep) === path.normalize(p)', function (t) {
-  ['aaa/bbb', 'aaa/bbb/ccc', 'aaa\\bbb', 'aaa\\bbb\\ccc'].forEach(function (p) {
-    t.same(pathnorm.normalize(p, pathnorm.sep), path.normalize(p));
+test('normalize to windows like', function (t) {
+  [['aaa/bbb', 'aaa\\bbb'], ['aaa/bbb/ccc', 'aaa\\bbb\\ccc']].forEach(function (p) {
+    t.same(pathnorm.normalize(p[0], '\\'), p[1]);
+    t.same(pathnorm.normalize(p[1], '\\'), p[1]);
   });
   t.end();
 });
