@@ -7,7 +7,7 @@ BACKSLASH = '\\';
 
 var
 sep  = exports.sep = path.sep,
-rSep = exports.rSep = new RegExp('\\' + sep, 'g'),
+rSep = exports.rSep = /[\\\/]/g,
 seps = exports.seps = 'darwin freebsd linux sunos'.split(' ')
   .reduce(function (seps, platform) {
     seps[platform] = SLASH;
