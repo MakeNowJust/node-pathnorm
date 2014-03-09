@@ -1,5 +1,7 @@
 #pathnorm
 
+![Build Status](https://api.travis-ci.org/MakeNowJust/node-pathnorm.png)
+
 fix path.normalize to cross platform
 
 ##API
