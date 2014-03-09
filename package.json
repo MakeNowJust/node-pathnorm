@@ -1,7 +1,7 @@
 {
   "name": "pathnorm",
-  "version": "0.0.1",
-  "description": "fix path.normilization to cross platform",
+  "version": "0.0.2",
+  "description": "fix path.normalize to cross platform",
   "main": "index.js",
   "scripts": {
     "test": "tap ./test/*.js"
