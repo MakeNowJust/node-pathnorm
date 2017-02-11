@@ -1,5 +1,7 @@
 #pathnorm
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/MakeNowJust/node-pathnorm.svg)](https://greenkeeper.io/)
+
 ![Build Status](https://api.travis-ci.org/MakeNowJust/node-pathnorm.png)
 
 fix path.normalize to cross platform
